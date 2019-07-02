@@ -139,7 +139,6 @@ carro.entrarPessoa(4);//"Só cabe mais 3 pessoas!"
 
 // Faça o carro encher.
 carro.entrarPessoa(2);//'Já temos 5 pessoas no carro'
-carro.entrarPessoa(1);//'O carro já está lotado'
 // Tire 4 pessoas do carro.
 carro.entrarPessoa(-4) ;// Já temos 1 pessoas no carro
 // Adicione 10 pessoas no carro.
