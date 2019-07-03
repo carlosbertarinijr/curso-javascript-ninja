@@ -7,16 +7,17 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-var isTruthy = function(x){ return x?true:false};
+var isTruthy = function(x){return  !!x};
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 isTruthy(0);
 isTruthy(-0);
 isTruthy('');
-isTruthy("");
 isTruthy(undefined);
 isTruthy(NaN);
 isTruthy(null);
+isTruthy(false);
+
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
@@ -44,7 +45,16 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-var carro = {marca: 'BMW', modelo: 'Sport', placa: 'CABJ-2568', ano: 2020, cor: 'preto', quantasPortas: 4, assentos: 5, quantidadePessoas: 0};
+var carro = {
+            marca: 'BMW', 
+            modelo: 'Sport', 
+            placa: 'CABJ-2568', 
+            ano: 2020, 
+            cor: 'preto',
+            quantasPortas: 4, 
+            assentos: 5, 
+            quantidadePessoas: 0
+            };
             
 
 
