@@ -113,9 +113,7 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 citado acima, no lugar de "pessoas".
 */
 carro.entrarPessoa = function(numeroPessoas){
-
 var soma = carro.quantidadePessoas + numeroPessoas;   
-
 if(carro.quantidadePessoas === carro.assentos && soma>=carro.assentos ){
     return 'O carro já está Lotado' }; 
 if (soma > carro.assentos) {
@@ -158,7 +156,7 @@ carro.entrarPessoa(2);// 'Já temos 2 Pessoas no carro'
 carro.entrarPessoa(4);//"Só cabe mais 3 pessoas!"
 
 // Faça o carro encher.
-carro.entrarPessoa(2);//'Já temos 5 pessoas no carro'
+carro.entrarPessoa(3);//'Já temos 5 pessoas no carro'
 // Tire 4 pessoas do carro.
 carro.entrarPessoa(-4) ;// Já temos 1 pessoas no carro
 // Adicione 10 pessoas no carro.
