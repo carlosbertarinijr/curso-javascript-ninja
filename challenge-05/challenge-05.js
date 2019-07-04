@@ -7,12 +7,14 @@ var myArr= [NaN, 'Ninja', true, 'Carlos Ninja', 23];
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
 */
-function myFunction(arr){ return arr };
+function myFunction(arr){ 
+    return arr 
+}
 
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-console.log(myFunction(myArr)[2]);
+console.log(myFunction(myArr)[1]);
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -33,7 +35,11 @@ var myVar = [true, 'Carlos', undefined, NaN, null ];
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-myFunction(myVar);
+console.log(myFunction2(myVar, 0));
+console.log(myFunction2(myVar, 1));
+console.log(myFunction2(myVar, 2));
+console.log(myFunction2(myVar, 3));
+console.log(myFunction2(myVar, 4));
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -80,18 +86,19 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-console.log("O livro [Codigo Limpo] tem "+ book('codigoLimpo').quantidadePaginas+" páginas!");
+var bookname = 'codigoLimpo';
+console.log("O livro "+bookname+" tem "+ book(bookname).quantidadePaginas+" páginas!");
 
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-console.log("O autor do livro [Ethical Hacking] é "+ book('ethicalHacking').autor);
+console.log("O autor do livro "+bookname+" é "+ book(bookname).autor);
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-console.log("O livro [Java] foi publicado pela editora "+book('java').editora +".");
+console.log("O livro" +bookname+ "foi publicado pela editora "+book(bookname).editora +".");
