@@ -91,7 +91,7 @@ var sum = calculator('+');
 /*
 Agora `sum` é uma função. Mostre no console a soma de dois números, usando ela.
 */
-sum(5,5)//Resultado da Operação: 5 + 5 = 10
+sum(5,5)//Resultado da Operação: 5 + 5 = 10;
 
 /*
 Agora, declare algumas variáveis com os nomes `subtraction`, `multiplication`,
